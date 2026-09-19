@@ -1,0 +1,60 @@
+{
+  "intercepto": 2.7089490925159065,
+  "metricas_prueba": {
+    "mae": 1.5116692224549086,
+    "mse": 3.79679723671522,
+    "rmse": 1.9485372043446387,
+    "r2": 0.8609466508230368,
+    "observaciones_entrenamiento": 140,
+    "observaciones_prueba": 60,
+    "random_state": 42
+  },
+  "diagnosticos": {
+    "normalidad_shapiro": {
+      "estadistico": 0.8947042052063379,
+      "p_valor": 1.6319711412977095e-08,
+      "interpretacion": "Se encuentra evidencia estadística para cuestionar que los residuos sigan una distribución normal."
+    },
+    "homocedasticidad_breusch_pagan": {
+      "estadistico_lm": 5.6781388331069005,
+      "p_valor": 0.12836377896881004,
+      "interpretacion": "No hay evidencia estadística suficiente para rechazar que la varianza de los residuos sea constante."
+    },
+    "linealidad_reset_ramsey": {
+      "estadistico_f": 39.365725715850374,
+      "p_valor": 4.443986024938321e-09,
+      "interpretacion": "Se encuentra evidencia estadística para cuestionar que la especificación lineal sea suficiente."
+    },
+    "multicolinealidad_vif": {
+      "valores": {
+        "TV": 1.0044952572375898,
+        "Radio": 1.1359460437614965,
+        "Newspaper": 1.132249732857302
+      },
+      "interpretacion": "Valores de VIF menores de 5 no sugieren multicolinealidad problemática."
+    }
+  },
+  "comparacion_exploratoria_de_modelos": [
+    {
+      "modelo": "Modelo con interacción TV y Radio",
+      "mae": 0.7459870497090714,
+      "mse": 0.9247095706564947,
+      "rmse": 0.9616182042039838,
+      "r2": 0.9661335713236504
+    },
+    {
+      "modelo": "Modelo reducido TV y Radio",
+      "mae": 1.4758950903812145,
+      "mse": 3.6690470545306804,
+      "rmse": 1.9154756731764255,
+      "r2": 0.8656253548947075
+    },
+    {
+      "modelo": "Modelo base",
+      "mae": 1.5116692224549086,
+      "mse": 3.79679723671522,
+      "rmse": 1.9485372043446387,
+      "r2": 0.8609466508230368
+    }
+  ]
+}
