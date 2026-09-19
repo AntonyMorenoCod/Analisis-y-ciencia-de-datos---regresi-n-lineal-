@@ -1,0 +1,33 @@
+{
+  "registros_recibidos": 200,
+  "registros_despues_limpieza": 200,
+  "nulos_antes": {
+    "TV": 0,
+    "Radio": 0,
+    "Newspaper": 0,
+    "Sales": 0
+  },
+  "nulos_despues": {
+    "TV": 0,
+    "Radio": 0,
+    "Newspaper": 0,
+    "Sales": 0
+  },
+  "filas_eliminadas_por_objetivo_nulo": 0,
+  "duplicados_eliminados": 0,
+  "atipicos_detectados_iqr": {
+    "TV": 0,
+    "Radio": 0,
+    "Newspaper": 2,
+    "Sales": 0
+  },
+  "tratamiento_de_atipicos": "Se conservan y se interpretan; no se eliminan sin justificar un error de medición.",
+  "trazabilidad_fuente": {
+    "fuente_url": "https://raw.githubusercontent.com/justmarkham/scikit-learn-videos/master/data/Advertising.csv",
+    "metodo_descarga": "HTTP GET mediante requests",
+    "formato": "CSV",
+    "fecha_descarga_utc": "2026-09-19T15:49:42.485284+00:00",
+    "sha256_archivo_bruto": "98350ef2035798df4dce301c8bbaf288030e678b43fa9713d5849d73cedc4cfd",
+    "archivo_bruto": "data/raw/advertising.csv"
+  }
+}
