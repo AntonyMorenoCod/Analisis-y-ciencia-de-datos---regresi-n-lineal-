@@ -1,0 +1,4 @@
+modelo,mae,mse,rmse,r2
+Modelo con interacción TV y Radio,0.745987,0.92471,0.961618,0.966134
+Modelo reducido TV y Radio,1.475895,3.669047,1.915476,0.865625
+Modelo base,1.511669,3.796797,1.948537,0.860947
